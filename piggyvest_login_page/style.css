@@ -1,0 +1,96 @@
+html {
+    box-sizing: border-box;
+}
+*, *:before, *:after {
+    box-sizing: inherit;
+}
+body {
+    margin: 0;
+    padding: 0;
+    background-color: #ADD8E6;
+    font-family: sans-serif, Arial, Helvetica;
+}
+.logo {
+    text-align: center;
+    margin: 2rem 0;
+}
+img {
+    height: 4rem;
+    width: 12rem;
+}
+.wrapper {
+	width: 28rem;
+	margin: 0 auto;
+	display: flex;
+	flex-flow: column nowrap;
+    background-color: #FFF;
+    border-radius: 1rem 1rem 1rem 0;
+}
+label {
+    display: block;
+    margin-bottom: 0.5rem;
+    color: #4A5568;
+    font-size: 0.75rem;
+    font-weight: 750;
+}
+header {
+    text-align: center;
+    margin-top: 2rem;
+}
+h1 {
+    margin-bottom: 0.5rem;
+    color: #083E9E;
+}
+p {
+    margin-bottom: 0;
+    color: #728E8F;
+    font-size: 0.75rem;
+    letter-spacing: 0.08rem;
+}
+form {
+    margin: 2.5rem;
+}
+input, select {
+    height: 3.5rem;
+    width: 23rem;
+    margin-bottom: 2rem;
+    background-color: #EDF2F7;
+    border: none;
+    outline: none;
+    border-radius: 0.5rem;
+    padding: 1rem;
+    color: #1A202C;
+    font-size: 1rem;
+}
+input::placeholder {
+    color: #BBB4C0;
+    font-size: 1rem;
+  }
+button {
+    background-color: #144499;
+    height: 3.5rem;
+    width: 23rem;
+    border: none;
+    border-radius: 0.8rem 0.8rem 0.8rem 0;
+}
+button a {
+    color: white;
+    text-decoration: none;
+    font-weight: 750;
+    font-size: 1rem;
+}
+button:hover {
+    background-color: #062B6F;
+}
+footer {
+    margin: 2.5rem 0 3.5rem 0;
+    text-align: center;
+}
+footer a {
+    text-decoration: none;
+    color: #144499;
+    font-size: 0.8rem;
+}
+footer a:hover {
+    color: #062B6F;
+}
