@@ -19,11 +19,21 @@ let data = [
 
 function interestCalculator(arr) {
     //loop over the array
+    let interestData = [];
     for(let i = 0; i < data.length; i++) {
-        data[i].rate = determineRate(data[i].principal, data[i].time);
         // Object.assign(data[i], {rate : determineRate(data[i].principal, data[i].time)});
+        data[i].rate = determineRate(data[i].principal, data[i].time);
+        interestData.push (Object.assign(data[i], {
+            interest : calculateInterest(data[i].principal, data[i].rate, data[i].time)
+        }));
     }
-    // console.log(data);
+   
+    //console.log the array below
+    console.log(interestData);
+
+    //return interestData of objects with keys principal, rate, time and interest
+    return interestData
+
     //dtermine rate using an if statemment
     function determineRate(principal, time) {
         let rate;
@@ -38,26 +48,13 @@ function interestCalculator(arr) {
         }
         return rate;
     }
-    
-  
+
     //calculate interest using (p*r*t/100)
     function calculateInterest(principal, rate, time) {
         return principal * rate * time/100;
     }
-    let interestData = [];
-    for (let i = 0; i < data.length; i++) {
-        interestData.push (Object.assign(data[i], {interest : calculateInterest(data[i].principal, data[i].rate, data[i].time)} ))
-    }
-    //console.log the array below
-    console.log(interestData);
-
-    //return interestData of objects with keys principal, rate, time and interest
-    return interestData
-
 }
 
 //execute data passing initial array 
-let a = interestCalculator(data);
+interestCalculator(data);
 
-
-console.log(a);
