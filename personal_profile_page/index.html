@@ -3,17 +3,18 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Profile page | Goody</title>
     <link href="https://fonts.googleapis.com/css?family=Lobster+Two:400,700|Roboto&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <!-- <nav class="container-flex">
-        <h1>Goody's profile page</h1>
-    </nav> -->
+  
     <div class="parallax-top"> 
-        <h1>Goody's profile page</h1>
+        <div class="heading">
+            <h1>Goody's Page</h1>
+            <p>I'm an aspiring Frontend Web Developer</p>
+        </div>
     </div>
     <div class="container container-flex">
         <div class="profile-picture">
@@ -41,23 +42,23 @@
             </ul>
         </div>
     </div> 
-        <!-- <div class="parallax2"></div> -->
+       
 
-            <fieldset>
-                <legend>Get in touch with me</legend>
-                <form action="">
-                <label for="name"></label> 
-                <input type="text" id="name" name="name" placeholder="Your name">
-                <label for="phone"></label>
-                <input type="tel" id="phone" name="phome" placeholder="Don't forget your area code">
-                <label for="email"></label>
-                <input type="email" id="email" name="email" placeholder="Your email">
-                <label for="comments">Special requests:</label>
-                <textarea id="comments" name="comments" placeholder="Tell me everything..."></textarea>
-                <label>
-                    <button><a href="">Done!</a></button>
-                </form>
-            </fieldset>
+    <fieldset>
+        <legend>Get in touch with me</legend>
+        <form action="">
+        <label for="name"></label> 
+        <input type="text" id="name" name="name" placeholder="Your name" required>
+        <label for="phone"></label>
+        <input type="tel" id="phone" name="phome" placeholder="Your phone number (optional)">
+        <label for="email"></label>
+        <input type="email" id="email" name="email" placeholder="Your email" required>
+        <label for="comments">Message:</label>
+        <textarea id="comments" name="comments" placeholder="Write away..." required></textarea>
+        <label>
+            <button><a href="">Done!</a></button>
+        </form>
+    </fieldset>
 
       
    
