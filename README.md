@@ -1,2 +1,2 @@
 # Goody
-Contains Tasks done during the startng program
+This repository was a good practice for using gitflow
