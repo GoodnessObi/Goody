@@ -3,11 +3,94 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Star Wars Trivia</title>
     <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
-    
+<nav>
+  <img src="images/starwars.png" alt="" class="logo">
+  <p>May the force be with you.</p>
+</nav>
+
+    <div class="container container-flex">
+        <div class="">
+            <div class="question">
+                <p>Who created Star Wars?</p>
+                <div class="answer-options">
+                    <label>
+                        <input type="radio" name="starwars-creator" value="starwars">Stan Lee
+                    </label>
+                    <label>
+                        <input type="radio" name="starwars-creator" value="battlestar" class="right-answer">George Lucas
+                    </label>
+                    <label>
+                        <input type="radio" name="starwars-creator" value="borg">Gene Roddenberry
+                    </label>
+                </div>
+            </div>
+            <div class="question">
+                <p>Which furry species lives on the forest moon of Endor?</p>
+                <div class="answer-options">
+                    <label>
+                        <input type="radio" name="starwars-creator" value="starwars" class="right-answer">Ewoks
+                    </label>
+                    <label>
+                        <input type="radio" name="starwars-creator" value="battlestar">C-3PO
+                    </label>
+                    <label>
+                        <input type="radio" name="starwars-creator" value="borg">Chewbacca
+                    </label>
+                </div>
+            </div>
+            <div class="question">
+                <p>Which movie is the one where Luke finds out Vader is his father?</p>
+                <div class="answer-options">
+                    <label>
+                        <input type="radio" name="starwars-creator" value="starwars" class="right-answer">The Empire Strikes Back
+                    </label>
+                    <label>
+                        <input type="radio" name="starwars-creator" value="battlestar">The Phantom Menace
+                    </label>
+                    <label>
+                        <input type="radio" name="starwars-creator" value="borg">The Last Jedi
+                    </label>
+                </div>
+            </div>
+            <div class="question">
+                <p>Who is the mentor of Luke Skywalker?</p>
+                <div class="answer-options">
+                    <label>
+                        <input type="radio" name="starwars-creator" value="starwars">Darth Vader
+                    </label>
+                    <label>
+                        <input type="radio" name="starwars-creator" value="battlestar">Han Solo
+                    </label>
+                    <label>
+                        <input type="radio" name="starwars-creator" value="borg" class="right-answer">Obi-Wan Kenobi
+                    </label>
+                </div>
+            </div>
+            <div class="question">
+                <p>How old was Yoda when he died?</p>
+                <div class="answer-options">
+                    <label>
+                        <input type="radio" name="starwars-creator" value="starwars">120
+                    </label>
+                    <label>
+                        <input type="radio" name="starwars-creator" value="battlestar" class="right-answer">900
+                    </label>
+                    <label>
+                        <input type="radio" name="starwars-creator" value="borg">500
+                    </label>
+                </div>
+            </div>
+        </div>
+
+        <div class="buttons">
+            <button disabled="" class="btn prev">Prev</button>
+            <button class="btn next">Next</button>
+        </div>
+    </div>
 
     <script src="script.js"></script>
 </body>
