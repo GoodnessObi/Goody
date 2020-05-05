@@ -1,0 +1,88 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    padding: 0;
+    margin: 0;
+    background-image: image();
+    background-color: #effffb;
+    font-family: 'Source Code Pro', monospace;
+}
+
+nav {
+    background-color: #effffb;
+    
+}
+
+.logo {
+    width: 15rem;
+
+}
+
+.container {
+    /* width: 70%; */
+    margin: 0 auto;
+}
+
+.container-nav {
+    display: flex;
+    flex-direction: row nowrap;
+    justify-content: center;
+    background-color: #303030;
+}
+
+.container-nav p {
+    color: #7FE367;
+    font-family: 'Audiowide', cursive;
+}
+
+.container-question,
+.container-nav {
+    width: 50%;
+    margin: 0 auto;
+}
+
+.question {
+    display: none;
+    padding: 1rem 2rem 5rem 2rem;
+    background-color: #4f98ca;
+    color: #303030;
+    font-size: 1.5rem;
+    height: 25rem;
+}
+
+.active {
+    display: block;
+}
+
+label {
+    display: block;
+    margin: 1rem;   
+}
+
+.buttons {
+    width: 50%;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: row nowrap;
+    justify-content: center;
+}
+
+button {
+    background-color: #effffb;
+    font-family: 'Source Code Pro', monospace;
+    padding: 0.25rem 1.5rem;
+    font-size: 1.25rem;
+    cursor: pointer;
+}
+
+.correct {
+    background-color: #7FE367;
+    color: #ffffff;
+}
+
+.wrong {
+    background-color: #B5060D;
+    color: #ffffff;
+}
