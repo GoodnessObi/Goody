@@ -48,7 +48,6 @@ nav {
 }
 
 .container-counter p {
-    /* border: 1px solid blue; */
     margin: 0;
     font-size: 1.25rem;
     text-align: center;
@@ -76,10 +75,6 @@ label {
     border-radius: 2rem;
 
 }
-
-/* input:hover {
-    transform: scale(1.05);
-} */
 
 .buttons {
     width: 50%;
@@ -122,11 +117,13 @@ button:hover {
 .correct {
     background-color: #7FE367;
     color: #ffffff;
+    border-radius: 2rem;
 }
 
 .wrong {
     background-color: #B5060D;
     color: #ffffff;
+    border-radius: 2rem;
 }
 
 @media (min-width: 670px) {

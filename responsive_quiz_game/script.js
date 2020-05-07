@@ -2,9 +2,11 @@ const prevBtn = document.querySelector('.prev');
 const nextBtn = document.querySelector('.next');
 const question = document.querySelectorAll('.question');
 let currentlySelected = 0;
-let optionButtons = document.querySelectorAll("input[type = 'radio']");
+// let optionButtons = document.querySelectorAll("input[type = 'radio']");
+let counter = document.querySelector('.counter').innerHTML; 
+// console.log(counter);
 
-console.log(optionButtons);
+// console.log(optionButtons);
 // console.log(question);
 prevBtn.addEventListener('click', () => {
     question[currentlySelected].classList.remove('active'); currentlySelected--;
@@ -25,17 +27,47 @@ nextBtn.addEventListener('click', () =>{
     if(question.length === currentlySelected + 1) {
         nextBtn.disabled = true;
     }
+    buttonClick();
 });
 
+function buttonClick() {
+    question.forEach(div => {
+        if(div.classList.contains('active')) {
+            let labels= div.children[1];
+            let optionButtons = labels.children
+        for(let i = 0; i < optionButtons.length; i++) {
+            optionButtons[i].addEventListener('click', (e) => {
+                if(e.target.classList.contains('right-answer')) {
+                    e.target.parentElement.classList.add('correct');
+                    counter++;
+                    document.querySelector('.counter').innerHTML = counter;
+                    
+                    for(let i = 0; i < optionButtons.length; i++) {
+                        console.log(optionButtons[i]);
+                        optionButtons[i].children[0].disabled = true;
+                    }
+                   
+                } else {
+                    e.target.parentElement.classList.add('wrong');
+                    // document.getElementsByClassName('right-answer').parentElement.classList.add('correct');
+                }
+            }) 
 
-for(let i = 0; i < optionButtons.length; i++) {
-    optionButtons[i].addEventListener('change', () => {
-        console.log(i);
-        if (this.classList = 'right-answer') {
-            console.log('correct!');
-            Input
+        
+
+      
         }
-    })
+     
+    }})
 }
 
 
+
+
+// optionButtons.forEach(item => {
+//     // console.log(item);
+//     // item.addEventListener('click', event => {
+//     //  
+        
+//     // });
+// });
